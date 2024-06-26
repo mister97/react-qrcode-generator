@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 import Dummy_Component from "dummy-component";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <Dummy_Component/>
+        <Dummy_Component />
       </header>
     </div>
   );
