@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dummy-component": "git+https://github.com/recraftrelic/dummy-react-npm-module.git",
+    "qr-code-styling": "^1.6.0-rc.1",
+    "qrcode.react": "^3.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "dummy-component": "git+https://github.com/recraftrelic/dummy-react-npm-module.git"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
