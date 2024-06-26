@@ -1,68 +1,66 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# QR Code Generator
+This project is a React-based web application that allows users to generate customized QR codes. The QR codes can represent different types of data, such as plain text, URLs, vCards (contact information), and WiFi credentials. Additionally, users can customize the foreground and background colors of the QR codes and download them as PNG files.
 
-In the project directory, you can run:
+## Features
+1. **Real-time QR Code Generation**: The QR code updates live as you type, without needing to click a "Generate" button.
+2. **Multiple QR Code Types**: Support for various types of QR codes, including:
+   - Text
+   - URL
+   - vCard (contact information)
+   - WiFi credentials
+3. **Color Customization**: Users can select custom colors for the foreground and background of the QR code.
+4. **Downloadable QR Codes**: Users can download the generated QR code as a PNG file.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/mister97/react-qrcode-generator.git
+   cd react-qrcode-generator
+   ```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+2. **Install Dependencies**:
+  ```bash
+  npm install
+  ```
 
-### `npm test`
+3. **Run the Application**:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm start
+```
+The application will start and be available at http://localhost:3000.
 
-### `npm run build`
+## Usage
+1. **Select QR Code Type**: Choose the type of QR code you want to generate from the dropdown menu. Options include Text, URL, vCard, and WiFi.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Enter Data**:
+- Text: Simply enter the text you want to encode.
+- URL: Enter a valid URL.
+- vCard: Fill in the fields for full name, phone number, and email address.
+- WiFi: Enter the SSID and password of the WiFi network.
+3. **Customise Colors**: Use the color pickers to select foreground and background colors for the QR code.
+4. **View and Download**: The QR code will be displayed live as you enter data. Click the "Download QR Code" button to save the QR code as a PNG file.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Code Overview
+## App Component
+The main component (src/App.js) is responsible for rendering the UI and managing the state of the application. Key parts of the component include:
+- State Management: Uses useState hooks to manage the state of the QR code type, input data, and colors.
+- Effect Hooks: Utilizes useEffect hooks to update the QR code whenever the relevant state changes.
+- QR Code Styling: Uses the qr-code-styling library to generate QR codes with custom styles.
+- Event Handlers: Handles user input and updates the QR code accordingly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Styles
+The CSS file ```(src/App.css)``` contains styles for the application, including layout, input fields, and buttons.
 
-### `npm run eject`
+## Dependencies
+- React: A JavaScript library for building user interfaces.
+- qr-code-styling: A library for generating styled QR codes.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contribution
+Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or create a pull request.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
+This project is licensed under the MIT License.
